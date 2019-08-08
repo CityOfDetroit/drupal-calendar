@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Drupal Calendar | City of Detroit</title>
+  <meta name="description" content="Full calendar view for events using drupal as backend.">
+  <meta name="author" content="Edgar Montes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <!--build:css css/styles.min.css-->
+  <link href="sass/styles.scss" rel="stylesheet" />
+  <!--endbuild-->
+</head>
+
+<body>
+<form id="calendar-filters">
+  <fieldset>
+      <label for="name">Name</label>
+      <input type="text" id="name" list="name-list" placeholder="Enter Event Name">
+      <datalist id="name-list">
+        <option value="test">
+      </datalist>
+      
+  </fieldset>
+  <fieldset>
+      <label for="date">Date</label>
+      <input type="date" id="start" name="trip-start"
+       min="2018-01-01" max="2050-12-31">
+  </fieldset>
+  <fieldset>
+      <label for="department">Department</label>
+      <input type="input" id="department" list="department-list" placeholder="Enter Department Name">
+      <datalist id="department-list">
+        <option value="test">
+      </datalist>
+  </fieldset>
+  <fieldset>
+      <label for="type">Type</label>
+      <input type="input" id="type" list="type-list" placeholder="Select Type">
+      <datalist id="type-list">
+      </datalist>
+  </fieldset>
+  <button type="submit">Filter</button>
+  <button type="reset">Reset</button>
+</form>
+<section id="calendar-container">
+    <article id="calendar"></article>
+</section>
+  <script src="index.js"></script>
+</body>
