@@ -2,6 +2,7 @@
 import { Calendar } from '@fullcalendar/core';
 import '@fullcalendar/core/main.css';
 import Controller from './controller.class';
+import './sass/styles.scss';
 
 const drupalSettings = {
     intranet : {
