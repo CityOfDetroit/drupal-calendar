@@ -25,14 +25,10 @@ This project was created using:
     ```
 ## Create Build
 
-1. Delete `dist` folder.
-
-2. Run build process.
+1. Run build process.
     ```
-    $ parcel build index.html --public-url '.' --no-cache
+    $ yarn build
     ```
-
-3. Move new `dist` content to `dev`, `stage` or `prod` evironment.
 
 ## Resources
 
