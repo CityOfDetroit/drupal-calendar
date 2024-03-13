@@ -10,7 +10,8 @@
 </head>
 
 <body>
-<form id="calendar-filters">
+<!-- Intranet calendar -->
+<!-- <form id="calendar-filters">
   <fieldset>
       <label for="name">Name</label>
       <input type="text" id="name" list="name-list" placeholder="Enter Event Name">
@@ -39,7 +40,13 @@
   </fieldset>
   <button type="submit">Filter</button>
   <button type="reset">Reset</button>
-</form>
+</form> -->
+<!-- DEI calendar -->
+<div id="calendar-filters">
+  <button class="dei-filters say" data-mode="dei" data-filter="event-filters" data-value="1">Say</button>
+  <button class="dei-filters senior" data-mode="dei" data-filter="event-filters" data-value="2">Senior Facility</button>
+  <button class="dei-filters d-s" data-mode="dei"  data-filter="event-filters" data-value="3">D & S</button>
+</div>
 <section id="calendar-container">
     <article id="calendar"></article>
 </section>
