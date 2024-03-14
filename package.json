@@ -1,6 +1,6 @@
 {
   "name": "drupal-calendar",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Full calendar view for events using drupal as backend.",
   "main": "index.js",
   "scripts": {
